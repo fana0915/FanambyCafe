@@ -1,0 +1,76 @@
+.main
+  .introduction
+    .introduction__content
+      .introduction__content__title
+        %p 
+          日本の美しい素材と、
+        %p 
+          マダガスカルの大自然が生んだ
+        %p 
+          幻想的な空間
+
+      .introduction__content__words
+        %p 
+          四季とともに変化する日本の恵
+        %p 
+          地球の歴史がつりあげたマダガスカルの景色
+        %p 
+          大海原にかこまれたこの2つの島の色を
+        %p 
+          かけあわせた新しい世界。
+        %p 
+          そんな世界観が楽しめる空間を
+        %p 
+          どうぞお楽しみください。
+
+    %ul.slider
+      %li
+        = image_tag "/introduction/mada_image1.jpg", alt: " ", class:"image"
+      %li
+        = image_tag "/introduction/japan_image2.jpg", alt: " ", class:"image"
+      %li
+        = image_tag "/introduction/mada_image2.jpg", alt: " ", class:"image"        
+      %li
+        = image_tag "/introduction/japan_image3.jpg", alt: " ", class:"image"
+      %li
+        = image_tag "/introduction/mada_image3.jpg", alt: " ", class:"image"  
+      %li
+        = image_tag "/introduction/japan_image1.jpg", alt: " ", class:"image"
+
+  .menu
+    .title
+      Topics
+    .topics
+      .topics__cafe
+        = link_to cafes_path do
+          <img src="/topics/cafe_image.jpg" alt=" " class="topic" />
+        .explanatory
+          %p
+            現地の美味しさを
+          %p
+            お届けします。
+      
+      .topics__shop
+        <img src="/topics/shop_image.jpg" alt=" " class="topic" />
+        .explanatory
+          %p
+            大自然を生かした
+          %p
+            モノつくり
+
+      .topics__travel
+        <img src="/topics/travel_image.jpg" alt=" " class="topic" />
+        .explanatory      
+          %p
+            幻想的な世界への
+          %p
+            ご案内
+
+      .topics__instagram
+        = link_to "https://www.instagram.com/fana0902/", class: "topic" do
+          <img src="/topics/instagram_image.jpg" alt=" " class="topic" />
+        .explanatory
+          %p
+            日々の様子を
+          %p
+            写真と共に配信しています。
