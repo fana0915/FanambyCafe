@@ -1,0 +1,26 @@
+.header
+  .logo
+    logo
+
+  .buttom  
+    .list
+      %p
+        =link_to 'Home', root_path , class: "list"
+      %p 
+        =link_to 'Info', 'http://www.google.co.jp/', class: "list"
+      %p
+        =link_to 'Cafe', cafes_path, class: "list"
+      %p
+        =link_to 'Online Shop', 'http://www.google.co.jp/', class: "list"
+      %p
+        =link_to 'Travel', 'http://www.google.co.jp/', class: "list"
+      %p
+        =link_to 'Contact', 'http://www.google.co.jp/', class: "list"
+
+    .icon
+      = link_to "https://www.facebook.com/fanamby.razafimanantena/", class: "icon" do
+        = icon('fab', 'facebook',  class: "icon")
+      = link_to "https://twitter.com/fana0915", class: "icon" do
+        = icon('fab', 'twitter',  class: "icon")
+      = link_to "https://www.instagram.com/fana0902/", class: "icon" do
+        = icon('fab', 'instagram',  class: "icon")
