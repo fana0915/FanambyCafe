@@ -2,17 +2,37 @@
   .top
     .top__contents
       .top__contents__title
-        %p 
-          Cafe OFANA
+        Cafe OFANA
       .top__contents__words
-        %p 
-          メニュー
-        %p 
-          営業時間
-        %p 
-          -# =link_to 'ご予約', reservations_path, class: "words"
-        %p 
-          インフォメーション
+        %h1#menu-list
+          +メニュー
+          %p.menu
+            Morning
+          %p.menu
+            Lunch
+          %p.menu
+            Dinner
+        %h1#time
+          +営業時間
+          %p.hour
+            月-金 / 9:00 – 21:00
+          %p.hour
+            土日祝日 / 8:00 – 22:00
+
+        %h1#reserv
+          +ご予約
+          %p.phone
+            電話予約 050-0915-0902 
+          %p.net
+            =link_to 'インターネット予約', reservations_path, class: "words"
+        %h1#info
+          +インフォメーション
+          %p.store
+            駐車場 10台
+          %p.store
+            ペット: テラスのみ入場可
+          %p.store
+            ※但し、盲導犬、聴導犬、介助犬は入店可能
       .top__contents__address
         %p 
           〒192-8577 東京都
